@@ -37,7 +37,7 @@ def identify_speaker(new_embedding , candidates_list, threshold=0.65): # identif
     best_score = -1.0
     
     
-    for st_id , stored_embedding in candidates_list:
+    for st_id , stored_embedding in candidates_list.items():
         if stored_embedding:
             similarity = np.dot(new_embedding , stored_embedding)
             if similarity > best_score:
@@ -81,5 +81,6 @@ def process_bulk_audio(audio_bytes , candidates_list , threshold=0.65):  # embed
         return identified_results
     
     except Exception as e:
-        st.error("Bulk audio process error")    
+        st.error("Bulk audio process error")   
+        st.exception(e) 
         return {}               
