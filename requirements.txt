@@ -8,16 +8,21 @@ pandas
 scikit-learn
 dlib-bin              # face recognition alogorithm
 
+
 git+https://github.com/ageitgey/face_recognition_models.git
 setuptools<70.0.0
+
+
 
 supabase              # DBMS
 bcrypt                # for securly hashes passwords
 
+
+
 segno                 #creates QR
 pillow                # opens,process,saves images
 
-streamlit             # creates web interface
+
 
 librosa 
 resemblyzer
