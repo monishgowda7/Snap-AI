@@ -82,9 +82,7 @@ python -m pip install -r requirements.txt
 
 python -m streamlit run app.py
 
-Once the application starts, open the local URL displayed in your terminal, usually:
-
-http://localhost:8501
+Once the application starts, open the local URL displayed in your terminal, usually:http://localhost:8501
 
 Note: The project may require additional configuration, environment variables, or system dependencies depending on the implementation.
 
